@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Comparing Players</h1>
+<h2>Enter qualities for player 1 </h2>
+<form method='post' action="">{% csrf_token %}
+	{{form.as_p}}
+	<input type='submit' value='Create second player'>
+</form>
+</body>
+</html>
+{% endblock %}
